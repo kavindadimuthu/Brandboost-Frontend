@@ -1,10 +1,8 @@
-/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -13,7 +11,6 @@ body {
     margin: 10px 5vw;
 }
 
-/* Left side - Icon */
 .navbar-left {
     flex: 1;
 }
@@ -22,7 +19,6 @@ body {
     width: 250px;
 }
 
-/* Right side - Menu and Buttons */
 .navbar-right {
     display: flex;
     align-items: center;
@@ -51,7 +47,6 @@ body {
     color: #827f7fea;
 }
 
-/* Buttons */
 .navbar-buttons {
     display: flex;
     gap: 10px;

@@ -1,10 +1,8 @@
-/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Footer Styles */
 .footer {
     background-color: #011627;
     color: white;
@@ -58,7 +56,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Footer Bottom */
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -84,5 +81,5 @@ body {
 }
 
 .footer-bottom-right a:hover img {
-    filter: brightness(0) invert(0.8); /* Slightly darker on hover */
+    filter: brightness(0) invert(0.5); /* Slightly darker on hover */
 }
