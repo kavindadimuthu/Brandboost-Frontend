@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brandboost | Influencer hiring platform</title>
     <link rel="stylesheet" href="../styles/homeStyles.css">
+    <script src="../scripts/common.js"></script>
 </head>
 <body>
 
@@ -35,23 +36,6 @@
 
     <div id="footer"></div>
     
-
-
-    <script>
-        // Function to load a component
-        function loadComponent(componentId, componentFile) {
-            fetch(componentFile)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById(componentId).innerHTML = data;
-                })
-                .catch(error => console.error('Error loading component:', error));
-        }
-
-        // Load the navbar and footer components
-        loadComponent('navbar', '../components/navbar.html');
-        loadComponent('footer', '../components/footer.html');
-    </script>
     
 </body>
 </html>
