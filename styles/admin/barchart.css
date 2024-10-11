@@ -3,32 +3,67 @@
     justify-content: space-between;
     align-items: flex-end;
     height: 300px;
-    width: 100%;
+    width: 95%;
+    font-size: 12px;
     padding: 20px;
+    padding-bottom: 50px;
     background-color: #f7f7f7;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
 }
 
 .bar {
-    width: 14%;
+    width: 5%;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; /* Align the bars at the bottom */
+    height: 100%;
+}
+
+.identify{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.influencer-identity-outer{
+    display: flex;
+    width: 50%;
+    margin: 10px;
+}
+
+.designer-identity-outer{
+    display: flex;
+    width: 50%;
+    margin: 10px;
+}
+
+.influencer-identity{
+    background-color: #fd79a8;
+    width: 20px;
+    height: 20px;
+    
+}
+
+.designer-identity {
+    background-color: #686de0;
+    width: 20px;
+    height: 20px;
 }
 
 .influencer-orders {
-    background-color: #4caf50;
+    background-color: #fd79a8;
     width: 100%;
     border-radius: 4px 4px 0 0;
 }
 
 .designer-orders {
-    background-color: #2196f3;
+    background-color: #686de0;
     width: 100%;
-    border-radius: 4px 4px 0 0;
+    border-radius: 0;
 }
 
 .bar span {

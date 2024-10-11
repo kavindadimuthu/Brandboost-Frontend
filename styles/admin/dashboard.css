@@ -45,7 +45,6 @@ h1 {
 
 .stats div {
     width: calc(30% - 20px);
-    background-color: #cd84f1;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -62,6 +61,22 @@ h1 {
     font-size: 1.2em;
     margin: 5px 0;
 }
+
+.influencers{
+    background-color: #f1c3d2;
+    
+}
+
+.designers{
+    background-color: #b9f0e0;
+    
+}
+
+.businesses{
+    background-color: #e6ccf3;
+   
+}
+
 
 .chart, .customer-complaints {
     margin-top: 20px;
@@ -92,8 +107,8 @@ h1 {
 }
 
 .customer-complaints th, .customer-complaints td {
-    border: 1px solid #ddd;
-    padding: 10px;
+    /* border: 1px solid #ddd; */
+    padding: 20px;
     text-align: left;
 }
 
