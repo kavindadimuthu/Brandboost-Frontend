@@ -136,3 +136,25 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 8px;
 }
+
+.user{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user-img{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
