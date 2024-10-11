@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard UI</title>
     <link rel="stylesheet" href="../../styles/admin/dashboard.css">
-    <script src="../../scripts/admin.js"></script>
+    <script src="../../scripts/admin/dashboard.js"></script>
 
 </head>
 <body>
@@ -20,25 +20,38 @@
             <div class="stats">
                 <div class="influencers">
                     <h2>Influencers</h2>
-                    <p>6,452</p>
-                    <p>+5.39%</p>
+                    <p>0</p>
+                    <p>0%</p>
                 </div>
                 <div class="designers">
                     <h2>Designers</h2>
-                    <p>42,502</p>
-                    <p>-0.65%</p>
+                    <p>0</p>
+                    <p>0%</p>
                 </div>
                 <div class="businesses">
                     <h2>Businesses</h2>
-                    <p>56,201</p>
-                    <p>+2.29%</p>
+                    <p>0</p>
+                    <p>0%</p>
                 </div>
             </div>
     
             <div class="chart">
                 <h2>Statistics</h2>
                 <div width="600" height="300">
-                    <div id="barchart"></div>
+                    <div class="bar-chart">
+            
+                    </div>
+                    <div class="identify">
+                        <div class="influencer-identity-outer">
+                            <div class="influencer-identity" ></div>
+                            <div class="influencer-name">Influencer orders</div>
+                        </div>
+                        <div class="designer-identity-outer">
+                            <div class="designer-identity" ></div>
+                            <div class="designer-name">Designer orders</div>
+                        </div>
+            
+                    </div>
                 </div>
             </div>
     
@@ -54,24 +67,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Consequat</td>
-                            <td>02/08/2023</td>
-                            <td>Deserunt minim incididunt cillum nostrudo voluptate excepteur.</td>
-                            <td>Completed</td>
-                        </tr>
-                        <tr>
-                            <td>Reprehende</td>
-                            <td>01/09/2023</td>
-                            <td>Deserunt minim incididunt cillum nostrudo voluptate excepteur.</td>
-                            <td>Completed</td>
-                        </tr>
-                        <tr>
-                            <td>Labore</td>
-                            <td>15/12/2023</td>
-                            <td>Deserunt minim incididunt cillum nostrudo voluptate excepteur.</td>
-                            <td>Completed</td>
-                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
@@ -79,12 +75,16 @@
     
         <!-- New right-side column for registered users -->
         <div class="right-sidebar">
+            <div class="logout-button">
+                <div class="logout-btn">Logout</div>
+             </div>
 
 
             <div class="registered-users">
                 <h2>Registered Users</h2>
                 <div width="300" height="300">
-                    <div class="user">
+                    <div id="user2"></div>
+                    <!-- <div class="user">
                         <div class="user-img">
                             <img src="../../assets/user_logo.png" alt="user">
                         </div>
@@ -112,7 +112,7 @@
                             <h3>John Doe</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur </p>
                         </div>
-                    </div>
+                    </div> -->
                     
                 </div>
             </div>

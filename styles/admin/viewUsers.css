@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,7 +18,7 @@ body {
 }
 
 .main-content {
-    flex: 1; /* Takes up remaining space */
+    flex: 1;
     padding: 20px;
     background-color: #fff;
     overflow-y: auto;
@@ -31,7 +32,7 @@ body {
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Search Bar */
 .search-container {
     display: flex;
     justify-content: center;
@@ -54,11 +55,79 @@ body {
     color: #666;
 }
 
-#user{
+/* User Cards Layout */
+#user {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-outer {
+    width: calc(33.333% - 20px); /* Ensure 3 cards per row with 20px gap */
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-outer:hover {
+    transform: scale(1.05); /* Hover effect */
+}
+
+.user-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.user-info h4 {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #777;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+    .card-outer {
+        width: calc(50% - 20px); /* 2 cards per row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-outer {
+        width: 100%; /* Stack cards on small screens */
+    }
 }
 
 
+.logout-button{
+    display: flex;
+    justify-content: end;
+}
+
+.logout-btn{
+    background-color: #5865f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #4854d6;
+}
 
 .filter-header {
     font-size: 18px;
@@ -116,8 +185,8 @@ body {
 }
 
 .reset-button {
-    background-color: #f0f0f0;
-    color: #5865f2;
+    background-color: #5865f2;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;

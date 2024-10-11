@@ -56,6 +56,7 @@ body {
 /* Logged-in user section */
 .user-section {
     padding: 20px;
+    padding-bottom: 50px;
     border-top: 1px solid #ddd;
     display: flex;
     align-items: center;
