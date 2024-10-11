@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard UI</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../../styles/admin/dashboard.css">
-    <script src="../scripts/common.js"></script>
+    <script src="../../scripts/common.js"></script>
 
 </head>
 <body>
     <div class="container">
         <div id="sidebar-container">
-            <div id="sidebar"></div>
+            <!-- <div id="sidebar"></div> -->
         </div>
         <div class="main-content">
             <h1>Dashboard</h1>
@@ -123,19 +122,6 @@
     </div>
     
 
-    <script>
-        // Dynamically load the sidebar component
-        fetch('../../components/admin/sidebar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('sidebar-container').innerHTML = data;
-            });
-
-            fetch('../../components/admin/barchart.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('barchart').innerHTML = data;
-            });    
-    </script>
+   
 </body>
 </html>
