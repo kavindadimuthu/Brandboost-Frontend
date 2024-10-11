@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #686de0; /* Blue background */
+    color: #fff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    height: 100vh; /* Full page height */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: space-between; /* Space between the list and the bottom user section */
+}
+
+.logo {
+    margin: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Allows the ul to expand to take up remaining space */
+}
+
+.sidebar li {
+    padding: 10px;
+}
+
+.sidebar li:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-radius: 10px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Full clickable area */
+}
+
+/* Active tab style */
+.sidebar li.active {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.sidebar li.active a {
+    color: #007bff; /* Blue text for the active tab */
+}
+
+/* Logged-in user section */
+.user-section {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.user-section img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.user-section .username {
+    color: #fff;
+    font-size: 1em;
+}

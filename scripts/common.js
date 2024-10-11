@@ -11,3 +11,7 @@ function loadComponent(componentId, componentFile) {
 // Load the navbar and footer components
 loadComponent('navbar', '../components/navbar.html');
 loadComponent('footer', '../components/footer.html');
+
+//for admin dashboard sidebar
+loadComponent('sidebar', '../components/admin/sidebar.html');
+loadComponent('barchart', '../components/admin/barchart.html');

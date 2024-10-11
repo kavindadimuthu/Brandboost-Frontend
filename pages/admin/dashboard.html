@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../styles/admin/dashboard.css">
+    <script src="../scripts/common.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar-container">
+            <div id="sidebar"></div>
+        </div>
+        <div class="main-content">
+            <h1>Dashboard</h1>
+    
+            <!-- Main content here -->
+            <div class="stats">
+                <div class="influencers">
+                    <h2>Influencers</h2>
+                    <p>6,452</p>
+                    <p>+5.39%</p>
+                </div>
+                <div class="designers">
+                    <h2>Designers</h2>
+                    <p>42,502</p>
+                    <p>-0.65%</p>
+                </div>
+                <div class="businesses">
+                    <h2>Businesses</h2>
+                    <p>56,201</p>
+                    <p>+2.29%</p>
+                </div>
+            </div>
+    
+            <div class="chart">
+                <h2>Statistics</h2>
+                <div width="600" height="300">
+                    <div id="barchart"></div>
+                </div>
+            </div>
+    
+            <div class="customer-complaints">
+                <h2>Customer Complaints</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Date</th>
+                            <th>Complaint</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Consequat</td>
+                            <td>02/08/2023</td>
+                            <td>Deserunt minim incididunt cillum nostrudo voluptate excepteur.</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Reprehende</td>
+                            <td>01/09/2023</td>
+                            <td>Deserunt minim incididunt cillum nostrudo voluptate excepteur.</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Labore</td>
+                            <td>15/12/2023</td>
+                            <td>Deserunt minim incididunt cillum nostrudo voluptate excepteur.</td>
+                            <td>Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+        <!-- New right-side column for registered users -->
+        <div class="right-sidebar">
+
+
+            <div class="registered-users">
+                <h2>Registered Users Statistics</h2>
+                <svg width="300" height="300">
+                    <!-- chart data here -->
+                </svg>
+            </div>
+
+            
+        </div>
+    </div>
+    
+
+    <script>
+        // Dynamically load the sidebar component
+        fetch('../../components/admin/sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
