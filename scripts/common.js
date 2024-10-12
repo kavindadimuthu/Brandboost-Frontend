@@ -8,6 +8,10 @@ function loadComponent(componentId, componentFile) {
         .catch(error => console.error('Error loading component:', error));
 }
 
-// Load the navbar and footer components
-loadComponent('navbar', '../components/navbar.html');
-loadComponent('footer', '../components/footer.html');
+
+
+window.onload = function() {
+    loadComponent('navbar', '../components/navbar.html');
+    loadComponent('footer', '../components/footer.html');
+   
+};

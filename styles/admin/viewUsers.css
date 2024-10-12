@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+#sidebar-container {
+    width: 250px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.right-sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-left: 1px solid #ddd;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ccc;
+    font-size: 16px;
+    color: #333;
+}
+
+.search-bar::placeholder {
+    color: #666;
+}
+
+/* User Cards Layout */
+#user {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-outer {
+    width: calc(33.333% - 20px); /* Ensure 3 cards per row with 20px gap */
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-outer:hover {
+    transform: scale(1.05); /* Hover effect */
+}
+
+.user-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.user-info h4 {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #777;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+    .card-outer {
+        width: calc(50% - 20px); /* 2 cards per row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-outer {
+        width: 100%; /* Stack cards on small screens */
+    }
+}
+
+
+.logout-button{
+    display: flex;
+    justify-content: end;
+}
+
+.logout-btn{
+    background-color: #5865f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #4854d6;
+}
+
+.filter-header {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-header span {
+    display: flex;
+    align-items: center;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-options {
+    padding-left: 10px;
+}
+
+.filter-options label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.filter-options input {
+    margin-right: 10px;
+}
+
+.filter-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apply-button {
+    background-color: #5865f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-button {
+    background-color: #5865f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-button:hover {
+    background-color: #4854d6;
+}
+
+.reset-button:hover {
+    background-color: #e0e0e0;
+}

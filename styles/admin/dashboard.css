@@ -1,0 +1,289 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+#sidebar-container {
+    width: 250px;
+}
+
+.main-content {
+    flex: 1; /* Takes up remaining space */
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.right-sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-left: 1px solid #ddd;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stats div {
+    width: calc(30% - 20px);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stats h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.stats p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.influencers{
+    background-color: #f1c3d2;
+    
+}
+
+.designers{
+    background-color: #b9f0e0;
+    
+}
+
+.businesses{
+    background-color: #e6ccf3;
+   
+}
+
+.bar-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 300px;
+    width: 95%;
+    font-size: 12px;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bar {
+    width: 5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align the bars at the bottom */
+    height: 100%;
+}
+
+.identify{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.influencer-identity-outer{
+    display: flex;
+    width: 50%;
+    margin: 10px;
+}
+
+.designer-identity-outer{
+    display: flex;
+    width: 50%;
+    margin: 10px;
+}
+
+.influencer-identity{
+    background-color: #fd79a8;
+    width: 20px;
+    height: 20px;
+    
+}
+
+.designer-identity {
+    background-color: #686de0;
+    width: 20px;
+    height: 20px;
+}
+
+.influencer-orders {
+    background-color: #fd79a8;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.designer-orders {
+    background-color: #686de0;
+    width: 100%;
+    border-radius: 0;
+}
+
+.bar span {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.bar-chart::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.bar div {
+    transition: height 0.5s ease; /* Smooth transition for height */
+}
+
+
+
+
+.chart, .customer-complaints {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chart h2, .customer-complaints h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.chart svg {
+    width: 100%;
+    height: 300px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.customer-complaints table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.customer-complaints th, .customer-complaints td {
+    /* border: 1px solid #ddd; */
+    padding: 20px;
+    text-align: left;
+}
+
+.customer-complaints th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+.customer-complaints td {
+    background-color: #fff;
+}
+
+.customer-complaints tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.logout-button{
+    display: flex;
+    justify-content: end;
+}
+
+.logout-btn{
+    background-color: #5865f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #4854d6;
+}
+
+.registered-users {
+    margin-top: 20px;
+}
+
+.registered-users svg {
+    width: 100%;
+    height: 300px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#user2 {
+    display: flex;
+    flex-direction: column; /* Ensures tiles are one below the other */
+    gap: 15px; /* Adds space between tiles */
+    padding: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+    max-width: 300px;
+}
+
+.user:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.description h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.description p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
