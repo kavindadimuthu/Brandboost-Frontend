@@ -111,14 +111,15 @@ header {
 }
 
 .upload-section h3{
-    padding: 10px;
+    padding: 15px;
+    padding-left: 0px !important;
     font-size: medium;
     font-weight: lighter;
 }
 
 .upload-section form{
     padding: 20px;
-    /* margin: 10px; */
+    margin: 10px;
 }
 
 /* .upload-section form input{
