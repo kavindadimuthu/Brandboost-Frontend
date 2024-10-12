@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4fa;
+}
+
+header {
+    background-color: #0066ff;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-icons {
+    list-style: none;
+    display: flex;
+}
+
+.nav-icons li {
+    margin-left: 15px;
+}
+
+.nav-icons li a img{
+    height: 30px;
+    width: 30px;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #e0f0ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-header img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.form-header h2 {
+    color: #0066ff;
+    font-size: 24px;
+}
+
+.form-group {
+    /* display: flex; */
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"],
+.form-group input[type="url"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form-group.gender {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gender label {
+    margin-right: 10px;
+}
+
+.gender input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-group a {
+    color: #0066ff;
+    text-decoration: none;
+}
+
+.upload-section h3{
+    padding: 10px;
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.upload-section form{
+    padding: 20px;
+    /* margin: 10px; */
+}
+
+/* .upload-section form input{
+    border: 2px solid green;
+} */
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0066ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004ecb;
+}
+
+@media screen and (max-width: 600px) {
+    .register-container {
+        margin: 20px;
+    }
+
+    .form-group input {
+        font-size: 12px;
+    }
+}
