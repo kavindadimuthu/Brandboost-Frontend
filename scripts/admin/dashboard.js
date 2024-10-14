@@ -121,7 +121,7 @@ function renderComplaints(complaints) {
 
 
 const orderData = [
-    { month: 'January', influencer: 40, designer: 20 },
+    { month: 'January', influencer: 40, designer: 80 },
     { month: 'February', influencer: 50, designer: 25 },
     { month: 'March', influencer: 60, designer: 25 },
     { month: 'April', influencer: 35, designer: 15 },
