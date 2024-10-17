@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Designer Register</title>
-    <link rel="stylesheet" href="../../styles/register/register.css">
+    <title>Influencer Register</title>
+    <link rel="stylesheet" href="../../styles/influencer/register.css">
 </head>
 <body>
     <header>
@@ -24,10 +24,10 @@
             <form class="register-form">
                 <div class="form-header">
                     <!-- <img src="brandboost-logo.png" alt="Brandboost Logo" class="form-logo"> -->
-                    <h2>Designer Register</h2>
+                    <h2>Influencer Register</h2>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group-name">
                     <input type="text" placeholder="First Name" required>
                     <input type="text" placeholder="Last Name" required>
                 </div>
@@ -42,38 +42,33 @@
 
                 <div class="form-group">
                     <input type="password" placeholder="Password" required>
+                </div>
+
+                <div class="form-group">
                     <input type="password" placeholder="Confirm Password" required>
                 </div>
 
                 <div class="form-group">
-                    <label>Gender</label>
+                    <label style="padding:10px">Gender</label>
                     <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
+                    <label for="male" style="padding:10px">Male</label>
                     <input type="radio" id="female" name="gender" value="female">
                     <label for="female">Female</label>
                 </div>
 
                 <div class="form-group">
-                    <input type="text" placeholder="Qualifications">
-
-                    <input type="text" placeholder="Experience">
-                    <div class="upload-section">
-                        <h3>Upload proofs regarding qualifications and experience if available</h3>
-                        <form action="/upload" method="POST" enctype="multipart/form-data">
-                            <label for="file-upload">Choose file:</label>
-                            <input type="file" id="file-upload" name="file-upload" accept="image/*, .pdf, .doc, .docx">
-                        </form>
-                    </div>
+                    <input type="url" placeholder="Facebook Profile Link">
+                    <input type="url" placeholder="Instagram Profile Link">
+                    <input type="url" placeholder="Youtube Channel Link">
+                    <input type="url" placeholder="Tik Tok Profile Link">
                 </div>
 
-                
-
-                <div class="form-group">
+                <div class="form-group" style="padding: 20px; margin: 10px; text-align: center;">
                     <input type="checkbox" id="privacy" required>
                     <label for="privacy">I agree all statements in <a href="#">Privacy Policy for BRANDBOOST</a></label>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" style="margin-left: 110px; margin-right: 110px;">
                     <button class="submit-button" type="submit">Register</button>
                 </div>
 

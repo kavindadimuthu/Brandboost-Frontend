@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../styles/influencer/dashboard.css">
+    <script src="../../scripts/influencer/dashboard.js"></script>
+    <script src="../../scripts/influencer/sidebar.js"></script>
+    <script src="../../scripts/influencer/chat.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="left-panel">
+            <div id="sidebar">
+                <!-- Sidebar content will be loaded here -->
+            </div>
+            <div id="chat">
+                <!-- Chat content will be loaded here -->
+            </div>
+        </div>
+        <main>
+            <div class="dashboard-header">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="dashboard-content">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Current Balance</h3>
+                        <p class="stat-value">$15.80</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Reviews</h3>
+                        <p class="stat-value">4.9</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Orders</h3>
+                        <p class="stat-value">350</p>
+                    </div>
+                </div>
+                <div class="active-orders">
+                    <h2>Active Orders</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orderTableBody">
+                            <!-- Order rows will be inserted here by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="sidebar.js"></script>
+    <script src="chat.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
