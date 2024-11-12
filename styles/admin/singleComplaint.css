@@ -31,6 +31,11 @@ body {
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
 .back-link {
     color: #666;
     text-decoration: none;
@@ -133,6 +138,7 @@ body {
 .logout-button{
     display: flex;
     justify-content: end;
+    height: 40px;
 }
 
 
