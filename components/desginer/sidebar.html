@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styles/admin/sidebar.css"/>
+</head>
+<body>
+
+
+    <div class="sidebar">
+        <img class="logo" src="../../assets/Logo.svg" alt="logo">
+
+        <ul>
+            <li class="active"><a href="#">Dashboard</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Banners</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Earnings</a></li>
+        </ul>
+    
+        <div class="user-section">
+            <img src="../../assets/user_logo.png" alt="User Image">
+            <span class="username">John Doe</span>
+        </div>
+    </div>
+
+    <script>
+        // Function to dynamically change the active class
+        document.addEventListener("DOMContentLoaded", function () {
+            const sidebarItems = document.querySelectorAll(".sidebar li");
+    
+            sidebarItems.forEach(item => {
+                item.addEventListener("click", function () {
+                    // Remove 'active' class from all sidebar items
+                    sidebarItems.forEach(i => i.classList.remove("active"));
+    
+                    // Add 'active' class to the clicked item
+                    this.classList.add("active");
+                });
+            });
+        });
+    </script>
+    
+    
+    
+</body>
+</html>
+
+
