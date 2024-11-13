@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #686de0;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.brand-boost {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.brand-boost img {
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fa7e1e;
+}
+
+nav ul li.active a {
+    font-weight: bold;
+    color: #fa7e1e;
+}
+
+nav ul li.active a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 3px;
+    background-color: #fa7e1e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, width 0.3s ease;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 3px;
+    background-color: #ff7675;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: width 0.3s ease;
+    transform-origin: left;
+}
+
+nav ul li.active a::after {
+    width: 100%;
+}
+
+/* User Menu Styling */
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px 40px 8px 12px;  
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.search-icon:hover {
+    opacity: 1;
+}
+
+.user-icon, .notification-icon, .chat-icon {
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+}
+
+.user-icon img, .notification-icon img, .chat-icon img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Makes the icons white */
+    transition: filter 0.3s ease;
+}
+
+.user-icon:hover, .notification-icon:hover, .chat-icon:hover {
+    transform: scale(1.1);
+}
+
+.user-icon:hover img, .notification-icon:hover img, .chat-icon:hover img {
+    filter: invert(56%) sepia(75%) saturate(1305%) hue-rotate(346deg) brightness(99%) contrast(94%); /* Changes to #fa7e1e on hover */
+}
+
+.user-icon .popup {
+    display: none;
+    position: absolute;
+    background-color: #686de0;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1;
+    right: 0;
+    min-width: 120px;
+}
+
+.user-icon:hover .popup {
+    display: block;
+}
+
+.user-icon .popup ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-icon .popup ul li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+}
+
+.user-icon .popup ul li a:hover {
+    background-color: #98bfef;
+}
