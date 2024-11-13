@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+#sidebar-container {
+    width: 250px;
+}
+
+/* Main Content Styles */
+.main-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.gig-header h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.seller-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.seller-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.seller-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stars {
+    color: #ffb33e;
+}
+
+/* Gallery Styles */
+.gig-gallery {
+    margin-bottom: 30px;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.thumbnail-list {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail-list img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.thumbnail-list img.active {
+    border: 2px solid #1dbf73;
+}
+
+/* Platforms Section */
+.platforms {
+    margin-bottom: 30px;
+}
+
+.platform-list {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.platform {
+    padding: 8px 16px;
+    background: #686de0;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* About Section */
+.about-content {
+    margin-top: 15px;
+}
+
+.about-content ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+/* Requirements Section */
+.requirements ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+/* Reviews Section */
+.review-stats {
+    margin-top: 20px;
+}
+
+.overall-rating {
+    margin-bottom: 20px;
+}
+
+.rating-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rating-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bar {
+    flex-grow: 1;
+    height: 8px;
+    background: #e4e5e7;
+    border-radius: 4px;
+}
+
+.bar .fill {
+    height: 100%;
+    background: #1dbf73;
+    border-radius: 4px;
+}
+
+/* Sidebar Styles */
+.right-sidebar {
+    position: sticky;
+    top: 20px;
+    padding: 20px;
+    width: 350px;
+}
+
+.logout-button{
+    display: flex;
+    justify-content: end;
+    height: 40px;
+}
+
+.logout-btn{
+    background-color: #5865f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #4854d6;
+}
+
+.pricing-card {
+    margin-top: 30px;
+    background: white;
+    padding: 24px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e4e5e7;
+}
+
+.tab {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.tab.active {
+    border-bottom: 2px solid #1dbf73;
+    color: #1dbf73;
+}
+
+.price-info {
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.features {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+.features i {
+    color: #1dbf73;
+    margin-right: 10px;
+}
+
+.continue-btn {
+    width: 100%;
+    padding: 12px;
+    background: #1dbf73;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.continue-btn:hover {
+    background: #19a463;
+}
